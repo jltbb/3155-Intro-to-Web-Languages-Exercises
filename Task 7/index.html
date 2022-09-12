@@ -1,0 +1,22 @@
+<!-- Input textbox that asks for the user's name --> 
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!-- Create a button that tells the user to click --> 
+<button id="my-button">Click Me</button>
+
+<!-- Create a script --> 
+<script>
+  // Create a variable that gets info from id="my-button" from the HTML
+  var myButton = document.querySelector('#my-button');
+  // Create a variable that gets info from id="name-input" from the HTML
+  var nameInput = document.querySelector('#name-input');
+
+  // Create an event listener that checks for a click to occur from the user
+  myButton.addEventListener('click', function () {
+    // Checks if the name is not blank
+    if (nameInput.value !== '') {
+      // If the name is not blank, print Hello alongside the name they inputted
+      alert('Hello ' + nameInput.value);
+    }
+  });
+// Close the script
+</script>
