@@ -1,0 +1,11 @@
+#main-title{
+    text-align: center;
+}
+.content
+{
+    margin-bottom: 12px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blue
+}
